@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico - Citas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="wrapp">
+            <a href="index.html" class="logo" title="Centro Médico">
+                Centro <span class="bordes">Médico</span>
+            </a>
+            <div class="usuario">
+                <a href="#" title="Cerrar Sesión">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="wrapp">
+            <!-- Sidebar -->
+            <aside>
+                <div class="widget">
+                    <a href="index.html" title="Centro Médico"><i class="fa fa-camera-retro fa-lg"></i> Centro Médico</a>
+                    <a href="citas.html" title="Citas">Citas</a>
+                    <a href="medicos.html" title="Médicos">Médicos</a>
+                    <a href="pacientes.html" title="Pacientes">Pacientes</a>
+                    <a href="consultorios.html" title="Consultorios">Consultorios</a>
+                    <a href="especialidades.html" title="Especialidades">Especialidades</a>
+                    <a href="usuarios.html" title="Usuarios">Usuarios</a>
+                    <a href="reportes.html" title="Reportes">Reportes</a>
+                </div>
+            </aside>
+
+            <!-- Contenido -->
+            <article>
+                <div class="mensaje">
+                    <h2>CITAS</h2>
+                </div>
+
+                <a class="agregar" href="agregarcitas.html">Agregar Citas</a>
+
+                <table class="tabla">
+                    <tr>
+                        <th>#</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>Médico</th>
+                        <th>Consultorio</th>
+                        <th>Estado</th>
+                        <th colspan="2">Opciones</th>
+                    </tr>
+                    <!-- Ejemplo de datos estáticos -->
+                    <tr>
+                        <td>1</td>
+                        <td>2025-09-10</td>
+                        <td>09:00</td>
+                        <td>Juan Pérez</td>
+                        <td>Dra. García</td>
+                        <td>Consultorio 1</td>
+                        <td>Pendiente</td>
+                        <td class="centrar"><a href="editarcita.html" class="editar">Editar</a></td>
+                        <td class="centrar"><a href="eliminarcita.html" class="eliminar">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2025-09-10</td>
+                        <td>10:30</td>
+                        <td>María López</td>
+                        <td>Dr. Ramírez</td>
+                        <td>Consultorio 2</td>
+                        <td>Atendida</td>
+                        <td class="centrar"><a href="editarcita.html" class="editar">Editar</a></td>
+                        <td class="centrar"><a href="eliminarcita.html" class="eliminar">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2025-09-11</td>
+                        <td>14:00</td>
+                        <td>Carlos Gómez</td>
+                        <td>Dra. Fernández</td>
+                        <td>Consultorio 3</td>
+                        <td>Cancelada</td>
+                        <td class="centrar"><a href="#" class="editar">Editar</a></td>
+                        <td class="centrar"><a href="#" class="eliminar">Eliminar</a></td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pie -->
+    <footer>
+        <p>Unifraz <a target="_blank" href="#" title="Centro Médico">Centro Médico</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Centro Médico - Médicos</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<!-- Encabezado -->
+	<header>
+		<div class="wrapp">
+			<a href="index.html" class="logo" title="Centro Médico">
+				Centro <span class="bordes">Médico</span>
+			</a>
+			<div class="usuario">
+				<a href="cerrar.html" title="Cerrar Sesión">Salir</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="wrapp">
+			<!-- Sidebar -->
+			<aside>
+				<div class="widget">
+					<a href="index.html"><i class="fa fa-camera-retro fa-lg"></i> Centro Médico</a>
+					<a href="citas.html">Citas</a>
+					<a href="medicos.html" class="activo">Médicos</a>
+					<a href="pacientes.html">Pacientes</a>
+					<a href="consultorios.html">Consultorios</a>
+					<a href="especialidades.html">Especialidades</a>
+					<a href="usuarios.html">Usuarios</a>
+					<a href="reportes.html">Reportes</a>
+				</div>
+			</aside>
+
+			<!-- Contenido -->
+			<article>
+				<div class="mensaje">
+					<h2>MÉDICOS</h2>
+				</div>
+
+				<form action="#" method="post" class="formulario">
+					<h2>Agregar Médico</h2>
+
+					<input required type="text" name="identificacion" placeholder="Identificación:">
+					<input required type="text" name="nombres" placeholder="Nombres:">
+					<input required type="text" name="apellidos" placeholder="Apellidos:">
+					<input type="email" name="correo" placeholder="Correo:">
+					<input type="text" name="telefono" placeholder="Teléfono:">
+
+					<label>Especialidad:</label>
+					<select name="especialidad" required>
+						<option value="Cardiología">Cardiología</option>
+						<option value="Pediatría">Pediatría</option>
+						<option value="Dermatología">Dermatología</option>
+						<option value="Neurología">Neurología</option>
+						<option value="Odontología">Odontología</option>
+					</select>
+
+					<input type="submit" value="Guardar Médico">
+				</form>
+			</article>
+		</div>
+	</section>
+
+	<!-- Pie -->
+	<footer>
+		<p>Unifraz <a target="_blank" href="#">Centro Médico</a></p>
+	</footer>
+</body>
+</html>

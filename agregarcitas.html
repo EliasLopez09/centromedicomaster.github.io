@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico - Citas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="wrapp">
+            <a href="index.html" class="logo" title="Centro Médico">
+                Centro <span class="bordes">Médico</span>
+            </a>
+            <div class="usuario">
+                <a href="cerrar.html" title="Cerrar Sesión">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="wrapp">
+            <!-- Sidebar -->
+            <aside>
+                <div class="widget">
+                    <a href="index.html" title="Centro Médico"><i class="fa fa-camera-retro fa-lg"></i> Centro Médico</a>
+                    <a href="citas.html" title="Citas">Citas</a>
+                    <a href="medicos.html" title="Médicos">Médicos</a>
+                    <a href="pacientes.html" title="Pacientes">Pacientes</a>
+                    <a href="consultorios.html" title="Consultorios">Consultorios</a>
+                    <a href="especialidades.html" title="Especialidades">Especialidades</a>
+                    <a href="usuarios.html" title="Usuarios">Usuarios</a>
+                    <a href="reportes.html" title="Reportes">Reportes</a>
+                </div>
+            </aside>
+
+            <!-- Contenido -->
+            <article>
+                <div class="mensaje">
+                    <h2>CITAS</h2>
+                </div>
+
+                <form action="#" method="post" class="formulario">
+                    <h2>Agregar Cita</h2>
+
+                    <label>Fecha:</label>
+                    <input type="date" name="fecha" required>
+
+                    <label>Hora:</label>
+                    <input type="time" name="hora" min="08:00" max="20:30" step="60" required>
+
+                    <label>Paciente:</label>
+                    <select name="paciente" required>
+                        <option value="Juan Pérez">Juan Pérez</option>
+                        <option value="María González">María González</option>
+                        <option value="Carlos Ramírez">Carlos Ramírez</option>
+                    </select>
+
+                    <label>Médico:</label>
+                    <select name="medico" required>
+                        <option value="Dr. Luis Fernández">Dr. Luis Fernández</option>
+                        <option value="Dra. Ana Morales">Dra. Ana Morales</option>
+                        <option value="Dr. Pedro Suárez">Dr. Pedro Suárez</option>
+                    </select>
+
+                    <label>Consultorio:</label>
+                    <select name="consultorio" required>
+                        <option value="Consultorio Central">Consultorio Central</option>
+                        <option value="Consultorio Pediatría">Consultorio Pediatría</option>
+                        <option value="Consultorio Odontología">Consultorio Odontología</option>
+                    </select>
+
+                    <label>Estado:</label>
+                    <select name="estado">
+                        <option value="asignado">Asignado</option>
+                        <option value="atendido">Atendido</option>
+                    </select>
+
+                    <label>Observaciones:</label>
+                    <textarea name="observaciones" placeholder="Escribe observaciones aquí..."></textarea>
+
+                    <input type="submit" value="Guardar Cita">
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <!-- Pie -->
+    <footer>
+        <p>Unifraz <a target="_blank" href="#" title="Centro Médico">Centro Médico</a></p>
+    </footer>
+</body>
+</html>
